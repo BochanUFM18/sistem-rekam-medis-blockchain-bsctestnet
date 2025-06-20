@@ -347,6 +347,8 @@ app.get("/patient-history/:patientUsername", isAuthenticated, (req, res) => {
   res.send(renderPage(`Riwayat ${patientUsername}`, bodyContent));
 });
 
+
+// lihat detail 
 app.get("/verify/:hash", isAuthenticated, async (req, res) => {
   try {
     const ipfsHash = req.params.hash;
