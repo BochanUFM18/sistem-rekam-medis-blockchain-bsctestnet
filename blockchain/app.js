@@ -71,18 +71,69 @@ function renderPage(title, bodyContent) {
 
 // --- ROUTES ---
 
+// --- ROUTES ---
+
 app.get("/", (req, res) => {
-  const body = `<article style="text-align: center; margin-top: 5rem;"><header><h1>Selamat Datang di Sistem Rekam Medis Blockchain</h1><p>Aplikasi aman untuk mencatat rekam medis dengan bukti di blockchain dan penyimpanan terdesentralisasi.</p></header><footer><a href="/login" role="button" class="contrast">Mulai Login</a><a href="/register" role="button" class="secondary">Daftar Akun Baru</a></footer></article>`;
+  // Saya memformatnya menjadi beberapa baris agar lebih mudah dibaca
+  const body = `
+    <article style="text-align: center; margin-top: 2.5rem;">
+      <header>
+        <h1 style="margin-bottom: 0.5rem;">Selamat Datang di Sistem Rekam Medis Blockchain</h1>
+        <p>Aplikasi aman untuk mencatat rekam medis dengan bukti di blockchain dan penyimpanan terdesentralisasi.</p>
+      </header>
+      <footer>
+        <a href="/login" role="button" class="contrast">Mulai Login</a>
+        <a href="/register" role="button" class="secondary" style="margin-left: 0.5rem;">Daftar Akun Baru</a>
+      </footer>
+    </article>
+  `;
   res.send(renderPage("Selamat Datang", body));
 });
 
 app.get("/login", (req, res) => {
-  const body = `<article><header><h2>Login</h2></header><form action="/login" method="POST"><label for="username">Username</label><input type="text" id="username" name="username" required><label for="password">Password</label><input type="password" id="password" name="password" required><button type="submit">Login</button></form><footer><p>Belum punya akun? <a href="/register">Daftar di sini</a></p></footer></article>`;
+  const body = `
+    <article style="max-width: 600px; margin: 2.5rem auto 0;">
+      <header style="text-align: center; margin-bottom: 1.5rem;">
+        <h2>Login</h2>
+      </header>
+      <form action="/login" method="POST">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Login</button>
+      </form>
+      <footer style="margin-top: 1rem;">
+        <p>Belum punya akun? <a href="/register">Daftar di sini</a></p>
+      </footer>
+    </article>
+  `;
   res.send(renderPage("Login", body));
 });
 
 app.get("/register", (req, res) => {
-  const body = `<article><header><h2>Registrasi Akun Baru</h2></header><form action="/register" method="POST"><label for="username">Username</label><input type="text" id="username" name="username" required><label for="password">Password</label><input type="password" id="password" name="password" required><label for="role">Daftar sebagai</label><select name="role" id="role" required><option value="pasien">Pasien</option><option value="dokter">Dokter</option></select><button type="submit">Daftar</button></form><footer><p>Sudah punya akun? <a href="/login">Login di sini</a></p></footer></article>`;
+  const body = `
+    <article style="max-width: 600px; margin: 2.5rem auto 0;">
+      <header style="text-align: center; margin-bottom: 1.5rem;">
+        <h2>Registrasi Akun Baru</h2>
+      </header>
+      <form action="/register" method="POST">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <label for="role">Daftar sebagai</label>
+        <select name="role" id="role" required>
+          <option value="pasien">Pasien</option>
+          <option value="dokter">Dokter</option>
+        </select>
+        <button type="submit">Daftar</button>
+      </form>
+      <footer style="margin-top: 1rem;">
+        <p>Sudah punya akun? <a href="/login">Login di sini</a></p>
+      </footer>
+    </article>
+  `;
   res.send(renderPage("Registrasi", body));
 });
 
@@ -347,8 +398,7 @@ app.get("/patient-history/:patientUsername", isAuthenticated, (req, res) => {
   res.send(renderPage(`Riwayat ${patientUsername}`, bodyContent));
 });
 
-
-// lihat detail 
+// lihat detail
 app.get("/verify/:hash", isAuthenticated, async (req, res) => {
   try {
     const ipfsHash = req.params.hash;
