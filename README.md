@@ -64,6 +64,7 @@ Kunci ini digunakan untuk mengautentikasi aplikasi Anda saat mengunggah file rek
 #### - Setelah masuk, klik ikon profil Anda di kanan atas, lalu pilih "API Keys".
 #### - Klik tombol "+ New Key".
 #### - Beri nama untuk kunci Anda (misalnya, "Proyek Rekam Medis") dan aktifkan semua akses yang diperlukan (biasanya sudah default).
+#### - Centang Admin dan atur semua jadi write untuk izin nya 
 #### - Setelah kunci dibuat, Pinata akan menampilkan API Key dan API Secret.
 Salin nilai API Key dan tempelkan ke PINATA_API_KEY.
 Salin nilai API Secret dan tempelkan ke PRIVATE_KEY_PINATA. (Meskipun nama variabelnya PRIVATE_KEY_PINATA, isinya adalah API Secret).
