@@ -16,8 +16,10 @@ Sebelum memulai, pastikan perangkat Anda telah terinstal perangkat lunak berikut
 Ikuti langkah-langkah berikut secara berurutan.
 
 ### 1. Clone Repositori
-    ```bash
-git clone https://github.com/BochanUFM18/sistem-rekam-medis-blockchain-bsctestnet.git
+Buka terminal atau command prompt Anda, lalu clone repositori ini menggunakan Git.
+
+```bash
+git clone [URL_REPOSITORI_GITHUB_ANDA]
 
 ### 2
 
