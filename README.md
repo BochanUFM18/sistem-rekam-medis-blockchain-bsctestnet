@@ -39,11 +39,11 @@ Buat sebuah file baru di direktori utama proyek dengan nama .env.
 #### 2. Isi File .env
 Salin template di bawah ini ke dalam file .env Anda.
 
-PRIVATE_KEY=""
+PRIVATE_KEY="Kunci privat dari dompet MetaMask Anda (untuk deploy & transaksi)"
 
-PINATA_API_KEY=""
+PINATA_API_KEY="Kunci API dari akun Pinata.cloud Anda"
 
-PRIVATE_KEY_PINATA=""
+PRIVATE_KEY_PINATA="API Secret Key dari akun Pinata.cloud Anda"
 
 #### 3. Cara Mendapatkan Setiap Kunci
 #### a. Mendapatkan PRIVATE_KEY dari MetaMask 
