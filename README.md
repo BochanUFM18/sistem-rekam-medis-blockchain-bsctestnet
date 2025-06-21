@@ -10,21 +10,21 @@ Berikut adalah detail yang Anda perlukan untuk menambahkan jaringan BSC (Binance
 Panduan Langkah-demi-Langkah
 Ikuti langkah-langkah di bawah ini untuk mengimpor BSC Testnet ke MetaMask Anda :
 1. Buka MetaMask 
-   • Buka ekstensi MetaMask di browser Anda (Chrome, Firefox, Brave, dll.) atau buka aplikasi seluler MetaMask.
-   • Masukkan kata sandi Anda untuk membuka kunci dompet Anda.
+   #### - Buka ekstensi MetaMask di browser Anda (Chrome, Firefox, Brave, dll.) atau buka aplikasi seluler MetaMask.
+   #### - Masukkan kata sandi Anda untuk membuka kunci dompet Anda.
 2. Akses Pengaturan Jaringan
-   • Di pojok kiri atas antarmuka MetaMask, klik pada dropdown jaringan (biasanya akan menampilkan "Ethereum Mainnet" secara default).
-   • Di bagian bawah daftar jaringan, klik tombol "Add network" (Tambah jaringan).
+   #### - Di pojok kiri atas antarmuka MetaMask, klik pada dropdown jaringan (biasanya akan menampilkan "Ethereum Mainnet" secara default).
+   #### - Di bagian bawah daftar jaringan, klik tombol "Add network" (Tambah jaringan).
 3. Tambahkan Jaringan Secara Manual
-   • Anda akan diarahkan ke halaman untuk menambahkan jaringan baru. Pilih opsi "Add a network manually" (Tambahkan jaringan secara manual). 
+   #### - Anda akan diarahkan ke halaman untuk menambahkan jaringan baru. Pilih opsi "Add a network manually" (Tambahkan jaringan secara manual). 
 4. Isi Detail Jaringan
 Sekarang, salin dan tempelkan detail Jaringan BSC Testnet yang telah disebutkan di atas ke dalam kolom yang sesuai:
-   • Network Name : Smart Chain - Testnet 
-   • New RPC URL: https://data-seed-prebsc-1-s1.binance.org:8545/
-   • Chain ID: 97 
-   • Currency Symbol: tBNB
-   • Block Explorer URL: https://testnet.bscscan.com
-   
+   #### - Network Name : Smart Chain - Testnet 
+   #### - New RPC URL: https://data-seed-prebsc-1-s1.binance.org:8545/
+   #### - Chain ID: 97 
+   #### - Currency Symbol: tBNB
+   #### - Block Explorer URL: https://testnet.bscscan.com
+
 ## 🛠️ Prasyarat (Prerequisites)
 
 Sebelum memulai, pastikan perangkat Anda telah terinstal perangkat lunak berikut:
