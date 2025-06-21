@@ -18,7 +18,7 @@ const pinata = new PinataClient(
   process.env.PINATA_API_KEY,
   process.env.PRIVATE_KEY_PINATA
 );
-const contractAddress = "ganti dengan smarctcontract yang sudah di deploy";
+const contractAddress = "0x9F8E5A93Cd2EcC56D3f79E8bDBe486a383d7bBF0";
 const contractABI =
   require("./artifacts/contracts/MedicalRecords.sol/MedicalRecords.json").abi;
 const provider = new ethers.JsonRpcProvider(
