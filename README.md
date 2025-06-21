@@ -19,14 +19,12 @@ Ikuti langkah-langkah di bawah ini untuk mengimpor BSC Testnet ke MetaMask Anda 
    • Anda akan diarahkan ke halaman untuk menambahkan jaringan baru. Pilih opsi "Add a network manually" (Tambahkan jaringan secara manual). 
 4. Isi Detail Jaringan
 Sekarang, salin dan tempelkan detail Jaringan BSC Testnet yang telah disebutkan di atas ke dalam kolom yang sesuai:
-| Pengaturan | Nilai |
-|---|---|
-| **Nama Jaringan** (Network Name) | `Smart Chain - Testnet` |
-| **URL RPC Baru** (New RPC URL) | `https://data-seed-prebsc-1-s1.binance.org:8545/` |
-| **ID Rantai** (Chain ID) | `97` |
-| **Simbol Mata Uang** (Currency Symbol) | `tBNB` |
-| **URL Block Explorer** (Block Explorer URL) | `https://testnet.bscscan.com` |
-
+   • Network Name : Smart Chain - Testnet 
+   • New RPC URL: https://data-seed-prebsc-1-s1.binance.org:8545/
+   • Chain ID: 97 
+   • Currency Symbol: tBNB
+   • Block Explorer URL: https://testnet.bscscan.com
+   
 ## 🛠️ Prasyarat (Prerequisites)
 
 Sebelum memulai, pastikan perangkat Anda telah terinstal perangkat lunak berikut:
